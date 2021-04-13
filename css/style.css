@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  /*Não soma, acrescenta uma coisa na outra*/
 }
 
 body {
@@ -24,6 +24,9 @@ img {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
     background: #000;
 }
 
@@ -49,7 +52,137 @@ img {
 }
 
 .home {
-    border: 1px solid red;
-    background-image: url('../img/Home1.png') no-repeat;
+    background: url("../img/Home.png") no-repeat center;
+    background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    z-index: 1;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    background: #000;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.sobre .conteudo-sobre {
+    width: 300px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+.conteudo-sobre h1 {
+    font-size: 40px;
+    margin-bottom: 90px;
+}
+
+.conteudo-sobre p{
+    font-size: 20px;
+}
+
+.img-sobre img {
+    z-index: 1;
+    position: absolute;
+    width: 323px;
+    height: 516px;
+}
+
+.bordav img {
+    width: 333px;
+    height: 526px;
+    position: relative;
+    top: -30px;
+    left: 20px;
+}
+
+.ambientes {
+    margin-top: 80px;
+}
+
+.ambientes h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.ambientes .card {
+    display: flex;
+    justify-content: center;
+}
+
+.ambientes .img-card {
+    box-shadow: 0px 3px 6px #00000087;
+    border-radius: 6px;
+    width: 228px;
+    height: 323px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.ambientes .img-card:nth-child(1) {
+    margin: 0;
+}
+
+.img-card img {
+    padding: 40px;
+}
+
+.ambientes .img-card:nth-of-type(2n + 1){
+    background: #b0b5ac;
+}
+
+.ambientes .img-card:nth-of-type(2n + 2){
+    background: #4d4d4d;
+    color: #e8e8e0;
+}
+
+.ambientes p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.banheiro {
+    margin-top: 80px;
+    border: 1px solid red;
+}
+
+.banheiro h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.img-bx img {
+    text-align: center;
+    z-index: 1;
+    /* position: absolute; */
+    width: 293px;
+    height: 486px;
+    margin-left: 40px;
+}
+
+.banheiro .img-bx {
+    display: flex;
+    justify-content: center;
+}
+
+.bordah img {
+    z-index: -1;
+    width: 506px;
+    height: 1060px;
+    position: relative;
+    top: -810px;
+    left: 415px;
+    transform: rotate(90deg);
 }
