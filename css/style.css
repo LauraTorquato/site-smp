@@ -18,16 +18,21 @@ img {
     max-width: 100%;
 }
 
+.nav-list ul {
+    list-style: none;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 100vw;
-    position: fixed;
-    z-index: 2;
+    top: 0;
+    width: 100%;
     background: #000;
+    z-index: 2;
+    position: fixed;
 }
 
 .menu .logo{
@@ -56,8 +61,10 @@ img {
     background-size: cover;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
+    width: 100%;
 }
 
 .btn {
@@ -71,8 +78,8 @@ img {
 
 .sobre {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
 }
 
 .sobre .conteudo-sobre {
@@ -92,21 +99,13 @@ img {
 
 .img-sobre img {
     z-index: 1;
-    position: absolute;
     width: 323px;
     height: 516px;
+    border: 10px solid #ffff;
 }
 
-.bordav img {
-    width: 333px;
-    height: 526px;
-    position: relative;
-    top: -30px;
-    left: 20px;
-}
-
-.ambientes {
-    margin-top: 80px;
+.ambientes{
+    width: 100%;
 }
 
 .ambientes h1 {
@@ -117,7 +116,9 @@ img {
 
 .ambientes .card {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .ambientes .img-card {
@@ -149,11 +150,12 @@ img {
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
+    max-width: 300px;
+    
 }
 
 .ambientes-itens {
     margin-top: 80px;
-    height: 608px;
 }
 
 .ambientes-itens h1 {
@@ -164,25 +166,26 @@ img {
 
 .img-bx img {
     text-align: center;
-    z-index: 1;
     width: 273px;
     height: 426px;
     margin: 20px 20px 15px 20px;
+    border: 10px solid #ffff;
 }
 
 .ambientes-itens .img-bx {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    border: 15px solid #ffffff;
-    width: 990px;
     margin: 0 auto;
 }
 
 .contato {
     background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 50%, #4d4d4d 50%), #f2f2f2;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-top: 80px;
+    width: 100%;
 }
 
 .contato h1 {
@@ -196,7 +199,6 @@ img {
     line-height: 15px;
     margin-top: 20px;
 }
-
 
 .contato .formulario {
     color: #4d4d4d;
@@ -247,8 +249,10 @@ img {
 .footer{
     background: #4d4d4d;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 40px;
+    width: 100%;
 }
 
 .footer h1 {
@@ -274,6 +278,7 @@ footer {
     text-align: center;
     color: #e8e8e0;
     padding: 60px 20px 20px 20px;
+    width: 100%;
 }
 
 footer p {
@@ -284,4 +289,105 @@ hr {
     width: 600px;
     color: #e8e8e0;
     margin: 0 auto 5px auto;
+}
+
+.site-section {
+    padding: 3em 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+@media (max-width: 769px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo-sobre h1 {
+        margin-bottom: 20px;
+    }
+
+    .conteudo-sobre p {
+        margin-bottom: 40px;
+    }
+
+    .sobre .conteudo-sobre {
+        margin-right: 0;
+        width: 500px;
+    }
+
+    .ambientes .img-card {
+        margin-top: 40px;
+    }
+
+    .img-bx {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer .info-f {
+        margin: 0 40px;
+    }
+
+    .site-section {
+        padding: 4em 0;
+    }
+
+    hr {
+        width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo-sobre h1 {
+        margin-bottom: 20px;
+    }
+
+    .conteudo-sobre p {
+        margin-bottom: 40px;
+    }
+
+    .sobre .conteudo-sobre {
+        margin-right: 0;
+        width: 500px;
+    }
+
+    .ambientes .img-card {
+        margin-top: 40px;
+    }
+
+    .img-bx {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer .info-f {
+        margin: 0 40px;
+    }
+
+    .site-section {
+        padding: 4em 0;
+    }
+
+    hr {
+        width: 50%;
+    }
+
 }
