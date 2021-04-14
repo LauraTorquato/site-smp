@@ -1,0 +1,14 @@
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anime="fadeUp"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.3s, opacity 0.3s;
+}

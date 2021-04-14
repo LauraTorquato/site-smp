@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio | Design de interiores</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/simple-slide.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -45,105 +47,163 @@
     </section>
     <section class="ambientes" id="Ambientes">
         <h1>Ambientes</h1>
-        <div class="card">
-            <div class="img-card">
-                <img src="./img/chuveiro.svg" alt="Banheiro">
-                <h2>Banheiro</h2>
-            </div>
-            <div class="img-card">
-                <img src="./img/cozinha.svg" alt="Cozinha">
-                <h2>Cozinha</h2>
-            </div>
-            <div class="img-card">
-                <img src="./img/cama.svg" alt="Quarto">
-                <h2>Quarto</h2>
-                
-            </div>
-            <div class="img-card">
-                <img src="./img/sofa.svg" alt="Sala">
-                <h2>Sala</h2>
-            </div>
+        <div class="card ">
+                <div class="img-card">
+                    <a href="#Banheiro">
+                        <div class="conteudo-card1">
+                            <img src="./img/chuveiro.svg" alt="Banheiro">
+                            <h2>Banheiro</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-card">
+                    <a href="#Cozinha">
+                        <div class="conteudo-card">
+                            <img src="./img/cozinha.svg" alt="Cozinha">
+                            <h2>Cozinha</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-card">
+                    <a href="#Quarto">
+                        <div class="conteudo-card1">
+                            <img src="./img/cama.svg" alt="Quarto">
+                            <h2>Quarto</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="img-card">
+                    <a href="#Sala">
+                        <div class="conteudo-card">
+                            <img src="./img/sofa.svg" alt="Sala">
+                            <h2>Sala</h2>
+                        </div>
+                    </a>
+                </div>
         </div>
         <p>Ambientes planejados da melhor forma possível para o seu conforto!</p>
     </section>
-    <section class="banheiro">
+    <section class="ambientes-itens animate" id="Banheiro" data-anime="fadeUp">
         <h1>Banheiro</h1>
+            <div class="img-bx">
+                <div>
+                    <img src="./img/Banh2.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Banh5.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Banh6.png" alt="Imagem ilustrativa">
+                </div>
+                <!-- <div>
+                    <img src="./img/Banh3.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Banh4.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Banh1.png" alt="Imagem ilustrativa">
+                </div> -->
+            </div>
+    </section>
+    <section class="ambientes-itens" id="Cozinha" data-anime="fadeUp">
+        <h1>Cozinha</h1>
+            <div class="img-bx">
+                <div>
+                    <img src="./img/Coz1.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Coz3.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Coz5.png" alt="Imagem ilustrativa">
+                </div>
+                <!-- <div>
+                    <img src="./img/Coz6.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Coz4.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Coz2.png" alt="Imagem ilustrativa">
+                </div> -->
+            </div>
+    </section>
+    <section class="ambientes-itens" id="Quarto" data-anime="fadeUp">
+        <h1>Quarto</h1>
         <div class="img-bx">
             <div>
-                <img src="./img/Banh2.png" alt="Imagem ilustrativa">
+                <img src="./img/Quar1.png" alt="Imagem ilustrativa">
             </div>
             <div>
-                <img src="./img/Banh5.png" alt="Imagem ilustrativa">
+                <img src="./img/Quar3.png" alt="Imagem ilustrativa">
             </div>
             <div>
-                <img src="./img/Banh6.png" alt="Imagem ilustrativa">
+                <img src="./img/Quar2.png" alt="Imagem ilustrativa">
             </div>
-        </div>
-        <div class="bordah">
-            <img src="./img/BordaV.png" alt="">
-        </div>
-    </section>
-    <section class="cozinha">
-        <h1>Cozinha</h1>
-        <div>
-            <img src="./img/Coz1.png" alt="Imagem ilustrativa">
-        </div>
-        <div>
-            <img src="./img/Coz3.png" alt="Imagem ilustrativa">
-        </div>
-        <div>
-            <img src="./img/Coz5.png" alt="Imagem ilustrativa">
+            <!-- <div>
+                    <img src="./img/Quar5.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Quar4.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/Quar6.png" alt="Imagem ilustrativa">
+                </div> -->
         </div>
     </section>
-    <section class="quarto">
-        <h1>Quarto</h1>
-        <div>
-            <img src="./img/Quar1.png" alt="Imagem ilustrativa">
-        </div>
-        <div>
-            <img src="./img/Quar3.png" alt="Imagem ilustrativa">
-        </div>
-        <div>
-            <img src="./img/Quar2.png" alt="Imagem ilustrativa">
-        </div>
-    </section>
-    <section class="sala">
+    <section class="ambientes-itens" id="Sala" data-anime="fadeUp">
         <h1>Sala</h1>
-        <div>
-            <img src="./img/S1.png" alt="Imagem ilustrativa">
-        </div>
-        <div>
-            <img src="./img/S3.png" alt="Imagem ilustrativa">
-        </div>
-        <div>
-            <img src="./img/S2.png" alt="Imagem ilustrativa">
-        </div>
+        <div class="img-bx">
+            <div>
+                <img src="./img/S1.png" alt="Imagem ilustrativa">
+            </div>
+            <div>
+                <img src="./img/S3.png" alt="Imagem ilustrativa">
+            </div>
+            <div>
+                <img src="./img/S2.png" alt="Imagem ilustrativa">
+            </div>
+                <!-- <div>
+                    <img src="./img/S5.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/S4.png" alt="Imagem ilustrativa">
+                </div>
+                <div>
+                    <img src="./img/S6.png" alt="Imagem ilustrativa">
+                </div> -->
+            </div>
     </section>
     <section class="contato" id="Contato">
         <h1>Contato</h1>
-        <form action="" class="formulario">
-            <div>
-                <label for="nome-completo">Nome Completo:</label>
-                <input type="text" name="nome-completo" id="nome-completo" maxlength="120" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" maxlength="500" required></textarea>
-            </div>
-            <div>
-                <button type="submit" form="contato">Enviar</button>
-            </div>
-        </form>
+        <div class="bx-contato">
+            <form action="" class="formulario">
+                <div>
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" name="nome-completo" id="nome-completo" maxlength="120" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="cor">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" required >
+                </div>
+                <div class="cor">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" maxlength="500" required></textarea>
+                </div>
+                <button type="submit" form="contato" class="enviar">Enviar</button>
+            </form>
+        </div>
     </section>
     <section class="footer">
         <div class="menu-f">
             <h1>Menu</h1>
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#Sobre">Sobre</a></li>
                 <li><a href="#Ambientes">Ambientes</a></li>
                 <li><a href="#Contato">Contato</a></li>
@@ -161,7 +221,11 @@
         </div>
     </section>
     <footer>
+        <hr>
         <p>Studio © Todos os direitos reservados.</p>
     </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
