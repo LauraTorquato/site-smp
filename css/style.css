@@ -110,7 +110,7 @@ img {
 
 .ambientes h1 {
     font-size: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -136,6 +136,7 @@ img {
 
 .ambientes .img-card:nth-child(odd){
     background: #b0b5ac;
+    /* margin-left: 0px; */
 }
 
 .ambientes .img-card:nth-child(even){
@@ -150,8 +151,6 @@ img {
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
-    max-width: 300px;
-    
 }
 
 .ambientes-itens {
@@ -184,13 +183,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 80px;
+    /* margin-top: 40px; */
     width: 100%;
 }
 
 .contato h1 {
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -368,6 +367,12 @@ hr {
         margin-top: 40px;
     }
 
+    .ambientes .img-card:nth-child(odd){
+        background: #b0b5ac;
+        margin-left: 0px;
+    }
+
+
     .img-bx {
         flex-direction: column;
         align-items: center;
@@ -389,5 +394,43 @@ hr {
     hr {
         width: 50%;
     }
+}
 
+@media (max-width: 535px) {
+    .nav-list ul {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-card{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre .conteudo-sobre {
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ambientes .img-card:nth-child(even){
+        margin-left: 0px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-f {
+        margin-bottom: 20px;
+    }
 }
